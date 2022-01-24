@@ -7,19 +7,19 @@
 
 import Foundation
 
-final class ViewControllerVM {
+final class FeedVM {
     //MARK: - Internal properties
     var dataModel = [FeedModel]()
     var loadData: ((State)->Void)?
 }
 
-extension ViewControllerVM {
+extension FeedVM {
     enum State {
         case dataSetup(Bool)
     }
 }
 
-extension ViewControllerVM {
+extension FeedVM {
     //MARK: - Public methods
     func launch() {
         APIManager.shared.fetchData {[weak self] result in

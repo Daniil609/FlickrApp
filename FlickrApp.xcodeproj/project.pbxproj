@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		3A2D6084279D593C003CBEA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D6083279D593C003CBEA9 /* AppDelegate.swift */; };
 		3A2D6086279D593C003CBEA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D6085279D593C003CBEA9 /* SceneDelegate.swift */; };
-		3A2D6088279D593C003CBEA9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D6087279D593C003CBEA9 /* ViewController.swift */; };
+		3A2D6088279D593C003CBEA9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D6087279D593C003CBEA9 /* FeedViewController.swift */; };
 		3A2D608B279D593C003CBEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2D6089279D593C003CBEA9 /* Main.storyboard */; };
 		3A2D608D279D593F003CBEA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A2D608C279D593F003CBEA9 /* Assets.xcassets */; };
 		3A2D6090279D593F003CBEA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2D608E279D593F003CBEA9 /* LaunchScreen.storyboard */; };
 		3A2D609D279D5A05003CBEA9 /* FeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D609C279D5A05003CBEA9 /* FeedsTableViewCell.swift */; };
-		3A2D609F279D5B0D003CBEA9 /* ViewControllerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D609E279D5B0D003CBEA9 /* ViewControllerVM.swift */; };
+		3A2D609F279D5B0D003CBEA9 /* FeedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D609E279D5B0D003CBEA9 /* FeedVM.swift */; };
 		3A2D60A3279D5B4E003CBEA9 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D60A2279D5B4E003CBEA9 /* APIManager.swift */; };
 		3A2D60A7279D5CC5003CBEA9 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D60A6279D5CC5003CBEA9 /* FeedModel.swift */; };
 /* End PBXBuildFile section */
@@ -23,13 +23,13 @@
 		3A2D6080279D593C003CBEA9 /* FlickrApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickrApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2D6083279D593C003CBEA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A2D6085279D593C003CBEA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A2D6087279D593C003CBEA9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3A2D6087279D593C003CBEA9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		3A2D608A279D593C003CBEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A2D608C279D593F003CBEA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A2D608F279D593F003CBEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A2D6091279D593F003CBEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A2D609C279D5A05003CBEA9 /* FeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsTableViewCell.swift; sourceTree = "<group>"; };
-		3A2D609E279D5B0D003CBEA9 /* ViewControllerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerVM.swift; sourceTree = "<group>"; };
+		3A2D609E279D5B0D003CBEA9 /* FeedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVM.swift; sourceTree = "<group>"; };
 		3A2D60A2279D5B4E003CBEA9 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		3A2D60A6279D5CC5003CBEA9 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,8 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				3A2D609B279D59D6003CBEA9 /* View */,
-				3A2D6087279D593C003CBEA9 /* ViewController.swift */,
-				3A2D609E279D5B0D003CBEA9 /* ViewControllerVM.swift */,
+				3A2D6087279D593C003CBEA9 /* FeedViewController.swift */,
+				3A2D609E279D5B0D003CBEA9 /* FeedVM.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -194,9 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2D60A3279D5B4E003CBEA9 /* APIManager.swift in Sources */,
-				3A2D6088279D593C003CBEA9 /* ViewController.swift in Sources */,
+				3A2D6088279D593C003CBEA9 /* FeedViewController.swift in Sources */,
 				3A2D609D279D5A05003CBEA9 /* FeedsTableViewCell.swift in Sources */,
-				3A2D609F279D5B0D003CBEA9 /* ViewControllerVM.swift in Sources */,
+				3A2D609F279D5B0D003CBEA9 /* FeedVM.swift in Sources */,
 				3A2D60A7279D5CC5003CBEA9 /* FeedModel.swift in Sources */,
 				3A2D6084279D593C003CBEA9 /* AppDelegate.swift in Sources */,
 				3A2D6086279D593C003CBEA9 /* SceneDelegate.swift in Sources */,

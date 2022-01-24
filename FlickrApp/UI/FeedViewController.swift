@@ -7,11 +7,11 @@
 import SafariServices
 import UIKit
 
-class ViewController: UIViewController, FeedsTableViewCellDelegate {
+class FeedViewController: UIViewController, FeedsTableViewCellDelegate {
     //MARK: - Private properties
     private var tableView: UITableView!
 
-    private var viewModel = ViewControllerVM()
+    private var viewModel = FeedVM()
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class ViewController: UIViewController, FeedsTableViewCellDelegate {
     }
 }
 
-private extension ViewController {
+private extension FeedViewController {
     //MARK: - Private methods
     func setupVM() {
         viewModel.loadData = { [weak self] state in
@@ -61,7 +61,7 @@ private extension ViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
     //MARK: - TableView Delegat, DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.dataModel.count
@@ -91,7 +91,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-private extension ViewController {
+private extension FeedViewController {
     //MARK: - Constants
     struct Constants {
         static let cellID = "cell"
